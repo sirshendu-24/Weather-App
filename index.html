@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="">
+    <div class="container">
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="search-bar">
+                <input type="text" placeholder="Search.." id="text">
+                <span class="search-icon" id="search-btn">🔍</span>
+            </div>
+            <div class="weather-info">
+                <div class="weather-icon">🌤️</div>
+                <div class="temperature">--</div>
+                <div class="description">--</div>
+                <div class="date-time">
+                </div>
+                <div class="location" id="loc"></div>
+            </div>
+        </div>
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="cards">
+                <div class="card">
+                    <h4>Wind</h4>
+                    <p id="wind"></p>
+                </div>
+                <div class="card">
+                    <h4>Humidity</h4>
+                    <p id="Humidity"></p>
+                </div>
+                <div class="card">
+                    <h4>Real Feel</h4>
+                    <p id="Feel"></p>
+                </div>
+                <div class="card">
+                    <h4>Pressure</h4>
+                    <p id="pressure"></p>
+                </div>
+                <div class="card">
+                    <h4>Sea_level</h4>
+                    <p id="sea_level"></p>
+                </div>
+                <div class="card">
+                    <h4>Temperature History</h4>
+                    <p id="temp_max"> </p>
+                    <p id="temp_min"> </p>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
